@@ -1,0 +1,10 @@
+def find_duplicates(lst):
+    duplicates = []
+    for i in range(len(lst)):
+        if lst[i] in lst[:i] and lst[i] not in duplicates:
+            duplicates.append(lst[i])
+    return duplicates
+
+# Example usage
+my_list = [1, 1, 2, 3, 4, 4, 5, 1]
+print("Duplicate values:", find_duplicates(my_list))
