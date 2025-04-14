@@ -1,0 +1,5 @@
+# Count occurrences of "good"
+feedback = input("Enter feedback: ")
+count_good = feedback.lower().count("good")
+
+print(f"\nThe word 'good' appeared {count_good} time(s).")
