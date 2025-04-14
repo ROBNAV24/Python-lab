@@ -1,0 +1,8 @@
+def reverse_traverse(lst):
+    for i in range(len(lst)-1, -1, -1):
+        print(f"{lst[i]} (original index: {i})")
+
+# Example usage
+colors = ['red', 'green', 'white', 'black']
+print("Traverse the said list in reverse order:")
+reverse_traverse(colors)
