@@ -1,0 +1,10 @@
+def split_list(lst, length_first_part):
+    part1 = lst[:length_first_part]
+    part2 = lst[length_first_part:]
+    return part1, part2
+
+# Example usage
+original_list = [1, 1, 2, 3, 4, 4, 5, 1]
+first_part_length = 3
+result = split_list(original_list, first_part_length)
+print("Splitted the said list into two parts:", result)
